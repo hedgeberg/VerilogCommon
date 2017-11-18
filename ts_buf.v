@@ -5,6 +5,7 @@ module ts_buf(in, out, en);
 	input [WIDTH-1:0] in;
 	input en;
 	output [WIDTH-1:0] out;
+	tri [WIDTH-1:0] out;
 
 	assign out = (en) ? in:{(WIDTH){1'bz}};
 

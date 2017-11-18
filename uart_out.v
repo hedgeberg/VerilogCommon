@@ -1,8 +1,8 @@
 //uart_out just needs "received/not received" ACK/NAK
 //uart_in  reading intel hex for programming
 
-`include "common/up_counter.v"
-`include "common/sr_latch.v"
+//`include "common/up_counter.v"
+//`include "common/sr_latch.v"
 
 module uart_out(data_in, ready, rst, tx, tx_done, clk);
 	parameter BIT_SIZE = 10415; //approximately 100E6/9600  (100 MHz/baud rate); 
